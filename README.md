@@ -40,8 +40,6 @@ Use the Download URL to dowload and Delete URL to delete the file from SendSpace
 
 If you experience problems running this, it might be because of the version of `sed` you are using. Try replacing `sed -E` with `sed -r` and see what happens. Otherwise read below what this flag stands for.
 
-```
-Use extended regular expressions rather than basic regular expressions. Extended regexps are those that egrep accepts; they can be clearer because they usually have fewer backslashes. Historically this was a GNU extension, but the -E extension has since been added to the POSIX standard (http://austingroupbugs.net/view.php?id=528), so use -E for portability. GNU sed has accepted -E as an undocumented option for years, and *BSD seds have accepted -E for years as well, but scripts that use -E might not port to other older systems. See Extended regular expressions.
-```
+> Use extended regular expressions rather than basic regular expressions. Extended regexps are those that egrep accepts; they can be clearer because they usually have fewer backslashes. Historically this was a GNU extension, but the -E extension has since been added to the POSIX standard (http://austingroupbugs.net/view.php?id=528), so use -E for portability. GNU sed has accepted -E as an undocumented option for years, and *BSD seds have accepted -E for years as well, but scripts that use -E might not port to other older systems. See Extended regular expressions.
 
 From [GNU sed manual](https://www.gnu.org/software/sed/manual/sed.html#Command_002dLine-Options).
